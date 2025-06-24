@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section id="home" className="relative h-screen flex items-center justify-center">
       <Image
-        src="/gite-la-petite-foret-1.jpeg"
+        src="/cover-la-petiteforet.png"
         alt="Vue extérieure du gîte La Petite Forêt"
         layout="fill"
         objectFit="cover"
