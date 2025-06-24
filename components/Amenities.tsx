@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
-import { Tv2, AirVent, Sunbed, Armchair, Puzzle, Car, Fence, Waves, Wifi, Baby, Heater } from 'lucide-react';
+import { Tv2, AirVent, Armchair, Puzzle, Car, Fence, Waves, Wifi, Baby, Heater } from 'lucide-react';
 
 const amenities = [
   { icon: <Tv2 className="h-10 w-10 text-gray-700" />, title: 'Télévision' },
   { icon: <AirVent className="h-10 w-10 text-blue-400" />, title: 'Air conditionné' },
   { icon: <Waves className="h-10 w-10 text-blue-500" />, title: 'Piscine couverte' },
   { icon: <Heater className="h-10 w-10 text-red-500" />, title: 'Sauna' },
-  { icon: <Sunbed className="h-10 w-10 text-yellow-500" />, title: 'Terrasse & Salon de jardin' },
+  { icon: <Armchair className="h-10 w-10 text-yellow-500" />, title: 'Terrasse & Salon de jardin' },
   { icon: <Puzzle className="h-10 w-10 text-indigo-500" />, title: 'Jeux pour enfants' },
   { icon: <Fence className="h-10 w-10 text-green-700" />, title: 'Jardin clos' },
   { icon: <Car className="h-10 w-10 text-gray-800" />, title: 'Parking privé' },
