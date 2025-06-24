@@ -9,6 +9,11 @@ import Leisure from '@/components/Leisure'
 import Reviews from '@/components/Reviews'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import dynamic from 'next/dynamic';
+
+const MapWithNoSSR = dynamic(() => import('@/components/Map'), {
+  ssr: false
+});
 
 export default function Home() {
   return (
@@ -34,6 +39,33 @@ export default function Home() {
         <meta property="twitter:title" content="Gîte La Petite Forêt - Chambres d'hôtes près des Sables d'Olonne" />
         <meta property="twitter:description" content="Un havre de paix avec piscine et sauna, idéalement situé pour découvrir la Vendée, le Vendée Globe et le Puy du Fou." />
         <meta property="twitter:image" content="https://la-petite-foret.vercel.app/cover-la-petiteforet.png" />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: `
+            {
+              "@context": "https://schema.org",
+              "@type": "LodgingBusiness",
+              "name": "Gîte La Petite Forêt",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "La Petite Forêt",
+                "addressLocality": "Grosbreuil",
+                "postalCode": "85440",
+                "addressCountry": "FR"
+              },
+              "telephone": "+33251378787",
+              "description": "Gîte de charme avec 2 chambres d'hôtes, piscine couverte et sauna, situé en campagne sur une propriété close de 1 hectare, à 15 minutes des Sables d'Olonne.",
+              "image": "https://la-petite-foret.vercel.app/cover-la-petiteforet.png",
+              "url": "https://la-petite-foret.vercel.app/",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "reviewCount": "4"
+              }
+            }
+          `}}
+        />
       </Head>
 
       <Header />
@@ -42,6 +74,16 @@ export default function Home() {
         <About />
         <Amenities />
         <Gallery />
+        <section id="map" className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-center text-green-800 mb-16">
+              Où nous trouver
+            </h2>
+            <div className="rounded-lg overflow-hidden shadow-xl">
+              <MapWithNoSSR />
+            </div>
+          </div>
+        </section>
         <Tourism />
         <Leisure />
         <Reviews />
