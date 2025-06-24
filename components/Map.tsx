@@ -1,6 +1,6 @@
 'use client';
 
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, Tooltip } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
@@ -26,6 +26,9 @@ const Map = () => {
           <b>Gîte La Petite Forêt</b><br />
           85440 Grosbreuil
         </Popup>
+        <Tooltip direction="top" offset={[0, -41]} opacity={1} permanent>
+          Gîte La Petite Forêt
+        </Tooltip>
       </Marker>
     </MapContainer>
   );
