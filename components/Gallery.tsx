@@ -29,13 +29,12 @@ const Gallery = () => {
           <h2 className="text-3xl font-bold text-center text-green-800 mb-16">
             Découvrez le gîte en images
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {images.map((image, idx) => {
-              const span = idx === 0 ? 'md:col-span-2 md:row-span-2' : 'col-span-1';
               return (
                 <motion.div
                   key={idx}
-                  className={`relative h-80 w-full overflow-hidden rounded-lg shadow-lg cursor-pointer ${span}`}
+                  className="relative h-80 w-full overflow-hidden rounded-lg shadow-lg cursor-pointer"
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
