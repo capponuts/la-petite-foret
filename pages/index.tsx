@@ -12,6 +12,7 @@ import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
+    // Force re-build
     <div>
       <Head>
         <title>Gîte La Petite Forêt - Les Sables d&apos;Olonne</title>
