@@ -13,6 +13,17 @@ const Footer = () => {
         <p className="text-sm text-gray-400 mt-4">
           &copy; {currentYear} La Petite Forêt. Tous droits réservés.
         </p>
+        <p className="text-xs text-gray-500 mt-6">
+          Site créé par :{' '}
+          <a 
+            href="https://kapinfo.fr" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="underline hover:text-gray-300"
+          >
+            Kapinfo
+          </a>
+        </p>
       </div>
     </footer>
   );
