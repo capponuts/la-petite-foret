@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://la-petite-foret.fr/sitemap.xml
+Sitemap: https://www.la-petite-foret.fr/sitemap.xml
 
 
