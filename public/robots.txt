@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://la-petite-foret.vercel.app/sitemap.xml
+
+
