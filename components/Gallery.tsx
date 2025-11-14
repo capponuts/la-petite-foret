@@ -4,7 +4,18 @@ import { useEffect, useState } from 'react';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 
-const baseImages: { src: string; alt: string }[] = [];
+const defaultImages: { src: string; alt: string }[] = [
+  { src: '/gallery/2-chambre-papillon.webp', alt: '2 chambre papillon' },
+  { src: '/gallery/batiment-chambre-d-hote.webp', alt: 'batiment chambre d hote' },
+  { src: '/gallery/chambre-libellule.webp', alt: 'chambre libellule' },
+  { src: '/gallery/entree-ch-d-hote.webp', alt: 'entree ch d hote' },
+  { src: '/gallery/lit-ch-papillon.webp', alt: 'lit ch papillon' },
+  { src: '/gallery/piscine.webp', alt: 'piscine' },
+  { src: '/gallery/salle-de-bain.webp', alt: 'salle de bain' },
+  { src: '/gallery/sauna.webp', alt: 'sauna' },
+  { src: '/gallery/vue-sur-le-parc.webp', alt: 'vue sur le parc' },
+  { src: '/gallery/wc-ch-papillon.webp', alt: 'wc ch papillon' },
+];
 
 const Gallery = () => {
   const [open, setOpen] = useState(false);
@@ -43,7 +54,7 @@ const Gallery = () => {
     load();
   }, []);
 
-  const images = [...baseImages, ...dynamicImages];
+  const images = dynamicImages.length ? dynamicImages : defaultImages;
 
   return (
     <>
