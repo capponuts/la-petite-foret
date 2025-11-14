@@ -67,8 +67,10 @@ const Gallery = () => {
                   <Image
                     src={image.src}
                     alt={image.alt}
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    unoptimized
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    style={{ objectFit: 'cover' }}
                     className="transition-transform duration-300 hover:scale-110"
                   />
                 </motion.div>
