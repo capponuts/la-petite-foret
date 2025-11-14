@@ -15,16 +15,22 @@ const About = () => {
           </h2>
           <div className="max-w-3xl mx-auto text-lg text-gray-700 space-y-6">
             <p>
-              Cette maison d'hôtes est située en campagne sur une propriété close de 1 hectare, à 4 km du bourg de Grosbreuil.
+              Située à la campagne, à 4&nbsp;km du bourg de Grosbreuil, La Petite Forêt vous accueille dans une dépendance neuve de la propriété, comprenant deux chambres d’hôtes avec entrée indépendante et Wi‑Fi.
             </p>
             <p>
-              Deux chambres d'hôtes sont aménagées dans une dépendance neuve (2019), à côté du logement du propriétaire. L'entrée est indépendante pour garantir votre tranquillité.
+              Au rez‑de‑jardin, une suite familiale, accessible aux personnes à mobilité réduite, se compose de deux chambres communicantes&nbsp;: l’une avec un lit de 140&nbsp;cm, l’autre avec deux lits jumelables de 90&nbsp;cm&nbsp;; un salon avec TV&nbsp;; une salle d’eau&nbsp;; et des WC séparés.
             </p>
             <p>
-              Vous serez accueillis par <strong>Nicole</strong>, votre hôte, qui parle Français, Anglais et Espagnol. Le gîte est agréé Gîtes de France® depuis 2021.
+              À l’étage, vous trouverez une grande chambre avec lit double électrique 2&nbsp;×&nbsp;70&nbsp;cm, TV, salle d’eau, WC séparés, un réfrigérateur à votre disposition et une terrasse avec vue sur le parc.
             </p>
             <p>
-              Profitez d'un cadre exceptionnel, idéal pour vous ressourcer à proximité des Sables d'Olonne.
+              Vous pourrez profiter de la piscine (5&nbsp;×&nbsp;10&nbsp;m) avec abri et toboggan aquatique, non chauffée et partagée avec le propriétaire.
+            </p>
+            <p>
+              Un espace bien‑être est à votre disposition&nbsp;: sauna (15&nbsp;€ la séance), table de massage, fauteuil massant, vélo elliptique. Dans le parc, vous trouverez un boulodrome et différents jeux.
+            </p>
+            <p>
+              En basse saison, le rez‑de‑jardin de la maison d’hôtes peut être loué (3&nbsp;jours minimum). Une petite cuisine équipée est alors ouverte avec la chambre familiale <em>Papillon</em>.
             </p>
           </div>
         </motion.div>
