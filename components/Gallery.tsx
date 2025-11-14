@@ -19,11 +19,22 @@ const Gallery = () => {
   useEffect(() => {
     async function load() {
       try {
-        const res = await fetch('/api/gallery');
-        if (!res.ok) return;
-        const data = await res.json();
-        if (Array.isArray(data?.images)) {
-          setDynamicImages(data.images);
+        // 1) Manifest statique (fiable en prod)
+        let res = await fetch('/gallery/manifest.json', { cache: 'no-store' });
+        if (res.ok) {
+          const data = await res.json();
+          if (Array.isArray(data?.images)) {
+            setDynamicImages(data.images);
+            return;
+          }
+        }
+        // 2) Fallback API (au cas où)
+        res = await fetch('/api/gallery', { cache: 'no-store' });
+        if (res.ok) {
+          const data = await res.json();
+          if (Array.isArray(data?.images)) {
+            setDynamicImages(data.images);
+          }
         }
       } catch {
         // silencieux

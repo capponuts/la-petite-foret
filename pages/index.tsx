@@ -23,7 +23,7 @@ export default function Home() {
         <title>Gîte La Petite Forêt - Chambres d'hôtes près des Sables d&apos;Olonne, Vendée</title>
         <meta name="description" content="Découvrez La Petite Forêt, un gîte de charme avec piscine et sauna à Grosbreuil, à 15min des Sables d'Olonne. Idéal pour vos vacances en Vendée." />
         <meta name="keywords" content="gîte, chambres d'hôtes, les sables d'olonne, vendée, gîte de charme, piscine, sauna, vendée globe, puy du fou, location vacances" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico?v=2" />
         <link rel="canonical" href="https://www.la-petite-foret.fr/" />
         <link rel="preload" as="video" href="/cover-video.mp4" type="video/mp4" />
 

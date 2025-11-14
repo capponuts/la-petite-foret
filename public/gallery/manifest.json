@@ -1,0 +1,44 @@
+{
+  "images": [
+    {
+      "src": "/gallery/2-chambre-papillon.webp",
+      "alt": "2 chambre papillon"
+    },
+    {
+      "src": "/gallery/batiment-chambre-d-hote.webp",
+      "alt": "batiment chambre d hote"
+    },
+    {
+      "src": "/gallery/chambre-libellule.webp",
+      "alt": "chambre libellule"
+    },
+    {
+      "src": "/gallery/entree-ch-d-hote.webp",
+      "alt": "entree ch d hote"
+    },
+    {
+      "src": "/gallery/lit-ch-papillon.webp",
+      "alt": "lit ch papillon"
+    },
+    {
+      "src": "/gallery/piscine.webp",
+      "alt": "piscine"
+    },
+    {
+      "src": "/gallery/salle-de-bain.webp",
+      "alt": "salle de bain"
+    },
+    {
+      "src": "/gallery/sauna.webp",
+      "alt": "sauna"
+    },
+    {
+      "src": "/gallery/vue-sur-le-parc.webp",
+      "alt": "vue sur le parc"
+    },
+    {
+      "src": "/gallery/wc-ch-papillon.webp",
+      "alt": "wc ch papillon"
+    }
+  ]
+}
