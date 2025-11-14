@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 
-const images = [
+const baseImages = [
   { src: '/gite-la-petite-foret-1.jpeg', alt: 'Vue extérieure du gîte' },
   { src: '/gite-la-petite-foret-2.jpeg', alt: 'Piscine couverte avec toboggan' },
   { src: '/gite-la-petite-foret-3.jpeg', alt: 'Chambre avec lit double' },
@@ -16,11 +16,30 @@ const images = [
 const Gallery = () => {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
+  const [dynamicImages, setDynamicImages] = useState<{ src: string; alt: string }[]>([]);
 
   const openLightbox = (imageIndex: number) => {
     setIndex(imageIndex);
     setOpen(true);
   };
+
+  useEffect(() => {
+    async function load() {
+      try {
+        const res = await fetch('/api/gallery');
+        if (!res.ok) return;
+        const data = await res.json();
+        if (Array.isArray(data?.images)) {
+          setDynamicImages(data.images);
+        }
+      } catch {
+        // silencieux
+      }
+    }
+    load();
+  }, []);
+
+  const images = [...baseImages, ...dynamicImages];
 
   return (
     <>
