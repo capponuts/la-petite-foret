@@ -25,20 +25,22 @@ export default function Home() {
         <meta name="keywords" content="gîte, chambres d'hôtes, les sables d'olonne, vendée, gîte de charme, piscine, sauna, vendée globe, puy du fou, location vacances" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href="https://www.la-petite-foret.fr/" />
+        <link rel="preload" as="video" href="/cover-video.mp4" type="video/mp4" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.la-petite-foret.fr/" />
         <meta property="og:title" content="Gîte La Petite Forêt - Chambres d'hôtes près des Sables d'Olonne" />
         <meta property="og:description" content="Un havre de paix avec piscine et sauna, idéalement situé pour découvrir la Vendée, le Vendée Globe et le Puy du Fou." />
-        <meta property="og:image" content="https://www.la-petite-foret.fr/cover-la-petiteforet.png" />
+        <meta property="og:image" content="https://www.la-petite-foret.fr/gallery/vue-sur-le-parc.webp" />
+        <meta property="og:site_name" content="La Petite Forêt" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://www.la-petite-foret.fr/" />
         <meta property="twitter:title" content="Gîte La Petite Forêt - Chambres d'hôtes près des Sables d'Olonne" />
         <meta property="twitter:description" content="Un havre de paix avec piscine et sauna, idéalement situé pour découvrir la Vendée, le Vendée Globe et le Puy du Fou." />
-        <meta property="twitter:image" content="https://www.la-petite-foret.fr/cover-la-petiteforet.png" />
+        <meta property="twitter:image" content="https://www.la-petite-foret.fr/gallery/vue-sur-le-parc.webp" />
 
         <script
           type="application/ld+json"
@@ -56,7 +58,7 @@ export default function Home() {
               },
               "telephone": "+33251378787",
               "description": "Gîte de charme avec 2 chambres d'hôtes, piscine couverte et sauna, situé en campagne sur une propriété close de 1 hectare, à 15 minutes des Sables d'Olonne.",
-              "image": "https://www.la-petite-foret.fr/cover-la-petiteforet.png",
+              "image": "https://www.la-petite-foret.fr/gallery/vue-sur-le-parc.webp",
               "url": "https://www.la-petite-foret.fr/",
               "aggregateRating": {
                 "@type": "AggregateRating",

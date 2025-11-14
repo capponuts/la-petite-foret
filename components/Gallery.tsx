@@ -4,14 +4,7 @@ import { useEffect, useState } from 'react';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 
-const baseImages = [
-  { src: '/gite-la-petite-foret-1.jpeg', alt: 'Vue extérieure du gîte' },
-  { src: '/gite-la-petite-foret-2.jpeg', alt: 'Piscine couverte avec toboggan' },
-  { src: '/gite-la-petite-foret-3.jpeg', alt: 'Chambre avec lit double' },
-  { src: '/gite-la-petite-foret-4.jpeg', alt: 'Espace salon et détente' },
-  { src: '/gite-la-petite-foret-5.jpeg', alt: 'Terrasse en bois' },
-  { src: '/cover-la-petiteforet.png', alt: 'Vue aérienne du gîte' },
-];
+const baseImages: { src: string; alt: string }[] = [];
 
 const Gallery = () => {
   const [open, setOpen] = useState(false);

@@ -1,16 +1,16 @@
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 
 const Hero = () => {
   return (
     <section id="home" className="relative h-screen flex items-center justify-center">
-      <Image
-        src="/cover-la-petiteforet.png"
-        alt="Vue extérieure du gîte La Petite Forêt"
-        layout="fill"
-        objectFit="cover"
-        quality={85}
-        priority
+      <video
+        className="absolute inset-0 h-full w-full object-cover"
+        src="/cover-video.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster="/gallery/vue-sur-le-parc.webp"
       />
       <div className="absolute inset-0 bg-black opacity-40"></div>
       <div className="relative z-10 text-center text-white p-4">
