@@ -25,7 +25,6 @@ export default function Home() {
         <meta name="keywords" content="gîte, chambres d'hôtes, les sables d'olonne, vendée, gîte de charme, piscine, sauna, vendée globe, puy du fou, location vacances" />
         <link rel="icon" href="/favicon.ico?v=2" />
         <link rel="canonical" href="https://www.la-petite-foret.fr/" />
-        <link rel="preload" as="video" href="/cover-video.mp4" type="video/mp4" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />

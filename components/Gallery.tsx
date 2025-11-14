@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+// utilisation d'<img> natif pour éviter tout 422 lié à l’optimiseur d’images
 import { useEffect, useState } from 'react';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
@@ -64,14 +64,11 @@ const Gallery = () => {
                   transition={{ duration: 0.5 }}
                   onClick={() => openLightbox(idx)}
                 >
-                  <Image
+                  <img
                     src={image.src}
                     alt={image.alt}
-                    fill
-                    unoptimized
-                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                    style={{ objectFit: 'cover' }}
-                    className="transition-transform duration-300 hover:scale-110"
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 hover:scale-110"
                   />
                 </motion.div>
               );
