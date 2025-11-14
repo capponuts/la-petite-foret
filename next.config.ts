@@ -15,7 +15,6 @@ const nextConfig: NextConfig = {
         ],
         destination: 'https://www.la-petite-foret.fr/:path*',
         permanent: true,
-        statusCode: 308,
       },
     ];
   },

@@ -17,7 +17,7 @@ const MapWithNoSSR = dynamic(() => import('@/components/Map'), {
 
 export default function Home() {
   return (
-    // Force re-build
+    // Force re-build 2025-11-14
     <div>
       <Head>
         <title>Gîte La Petite Forêt - Chambres d'hôtes près des Sables d&apos;Olonne, Vendée</title>
